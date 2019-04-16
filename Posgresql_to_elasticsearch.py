@@ -13,7 +13,7 @@ DATABASE_URI = f'postgresql://kola:test@localhost:5432/{posgresql_db}'
 psgr_import_dump = f'cat {posgresql_dump} | psql -h localhost -U {posgresql_user} {posgresql_db}'
 ElasticSearch_URI = 'http://localhost:9200/post/_doc/'
 SEARCH = ('messageid', 'author_from', 'author_to', 'email', 'raw_data') #Поисковые  колонки
-IMPORT_DUMP = False #
+IMPORT_DUMP = True
 
 
 
